@@ -4,6 +4,7 @@ import com.back.domain.post.post.entity.Post;
 
 import java.time.LocalDateTime;
 
+
 public record PostDto(
         int id,
         String title,
@@ -20,7 +21,7 @@ public record PostDto(
                 post.getTitle(),
                 post.getContent(),
                 post.getAuthor().getId(),
-                post.getAuthor().getNickname(),
+                post.getAuthor().getName(),
                 post.getCreateDate(),
                 post.getModifyDate()
         );
